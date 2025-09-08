@@ -76,15 +76,27 @@
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
     <link rel="manifest" href="image/site.webmanifest">
-    <title>SUGAR HIGH</title>
+    <title>Sugar HIGH</title>
 
 </head>
 <body>
 
 <div class="container">
     <div class="center">
-        <p class="bold">&#128571;</p>
-        <div class="accordion" id="accordionExample">
+        <img src="asset/sugarHIGH.svg" alt="Sugar High" style="max-width:200px; height:auto;">
+        <p style="
+      font-size: 22px; 
+      font-weight: 600; 
+      color: #333; 
+      letter-spacing: -0.5px;
+      margin: 0;
+  ">
+    원클릭 스밍 리스트
+  </p>
+        <p id="notice" style="font-size: 20px; font-weight: bold; text-align: center; margin-top: 40px;">
+            9월 11일 18시 05분에 공개됩니다
+          </p>
+          <div class="accordion" id="accordionExample" style="display:none; margin-top:20px;">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <div class="accordion-button collapsed"
@@ -155,8 +167,28 @@
 
 
         </div>
+        <p style="margin-top: 30px; text-align: center;">
+            <a href="https://x.com/DC_sanghyeon" target="_blank" style="font-weight: bold;">
+                📢 공지글 바로가기
+            </a>
+        </p>
     </div>
 </div>
+
+<script>
+    // 목표 시간 (서울 기준)
+    const targetTime = new Date("2025-09-11T18:05:00+09:00").getTime();
+  
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+  
+      if (now >= targetTime) {
+        document.getElementById("notice").style.display = "none"; // 안내 문구 숨기기
+        document.getElementById("accordionExample").style.display = "block"; // 아코디언 보이기
+        clearInterval(timer);
+      }
+    }, 1000);
+  </script>
 
 </body>
 </html>
