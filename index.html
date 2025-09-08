@@ -109,13 +109,13 @@
 <div class="container">
     <div class="center">
         <img src="asset/sugarHIGH.svg" alt="Sugar High" style="max-width:200px; height:auto;">
-        <p style="font-size: 22px; font-weight: 600; color: #333; letter-spacing: -0.5px;margin: 0;">
+        <p style="font-size: 22px; font-weight: 800; color: #333; letter-spacing: -0.5px;margin: 0;">
     원클릭 스밍 리스트
   </p>
-        <p id="notice" style="font-size: 20px; font-weight: bold; text-align: center; margin-top: 40px;">
-            9월 11일 18시 05분에 공개됩니다
+        <p id="notice" style="font-size: 20px; font-weight: 600; text-align: center; margin-top: 40px;">
+            9월 11일 18시 10분에 공개됩니다
           </p>
-          <div class="accordion" id="accordionExample" style="display:none; margin-top:20px;">
+        <div class="accordion" id="accordionExample" style="display:none; margin-top:20px;">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <div class="accordion-button collapsed"
@@ -187,6 +187,10 @@
 
         </div>
         <p style="margin-top: 30px; text-align: center;">
+            멜론(안드로이드, PC)의 경우 중복 곡 허용 후 1~4까지의 모든 버튼을 눌러 주셔야 합니다.<br>
+            멜론(iOS), 지니의 경우 원클릭으로 스밍 리스트 적용이 가능합니다.
+        </p>
+        <p style="margin-top: 30px; text-align: center;">
             <a href="https://x.com/DC_sanghyeon" target="_blank" style="font-weight: bold;">
                 📢 공지글 바로가기
             </a>
@@ -196,8 +200,8 @@
 
 <script>
     // 목표 시간 (서울 기준)
-    const targetTime = new Date("2025-09-11T18:05:00+09:00").getTime();
-  
+    const targetTime = new Date("2025-09-11T18:10:00+09:00").getTime();
+    // const targetTime = new Date("2025-09-08T11:05:00+09:00").getTime();
     const timer = setInterval(() => {
       const now = new Date().getTime();
   
@@ -207,7 +211,7 @@
         clearInterval(timer);
       }
     }, 1000);
-  </script>
+</script>
 
 </body>
 </html>
